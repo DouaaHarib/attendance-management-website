@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <> -->
+<EST>
+    <!-- departement -->
+    <departements>
+        <departement idDept="D02">
+            <nom>MAINTENANCE INDUSTRIELLE</nom>
+            <chefDept matricule="U002"/>
+        </departement>
+        <departement idDept="D03">
+            <nom>TECHNIQUES DE MANAGEMENT</nom>
+            <chefDept matricule="U003"/>
+        </departement>
+        <departement idDept="D04">
+            <nom>TECHNIQUES D’ANALYSES ET CONTRÔLE DE QUALITÉ</nom>
+            <chefDept matricule="U004"/>
+        </departement>
+    <departement idDept="D01">
+        <nom>INFORMATIQUE</nom>
+        <chefDept matricule="U001"/>
+    </departement>
+</departements>
+    <!-- users -->
+    <users>
+        <user matricule="user1" role="superAdmin">
+            <login>admin</login>
+            <password>admin</password>
+            <nom>zahedi</nom>
+            <prenom>chaymaa</prenom>
+            <permission ajoutEtd="1" suppEtd="1" modifierEtd="1" suppAbscence="1"/>
+        </user>
+        <!-- chef de departement -->
+        <user matricule="U001" role="chefDept">
+            <login>GI</login>
+            <password>GI</password>
+            <nom>MOUNIR</nom>
+            <prenom>Ilham</prenom>
+            <permission ajoutEtd="1" suppEtd="0" modifierEtd="1" suppAbscence="0"/>
+        </user>
+        <user matricule="U002" role="chefDept">
+            <login>GIM</login>
+            <password>GIM</password>
+            <nom>ECHAIBI</nom>
+            <prenom>Mohammed</prenom>
+            <permission ajoutEtd="0" suppEtd="0" modifierEtd="0" suppAbscence="0"/>
+        </user>
+        <user matricule="U003" role="chefDept">
+            <login>TM</login>
+            <password>TM</password>
+            <nom>MOKHLIS</nom>
+            <prenom>Khalil</prenom>
+            <permission ajoutEtd="0" suppEtd="0" modifierEtd="0" suppAbscence="0"/>
+        </user>
+        <user matricule="U004" role="chefDept">
+            <login>TIMQ</login>
+            <password>TIMQ</password>
+            <nom>BENHIDA</nom>
+            <prenom>Khalid</prenom>
+            <permission ajoutEtd="0" suppEtd="0" modifierEtd="0" suppAbscence="0"/>
+        </user>
+        <user matricule="U005" role="chefFiliere">
+            <login>chefGI</login>
+            <password>chefGI</password>
+            <nom>Elabdllaoui</nom>
+            <prenom>said</prenom>
+            <permission ajoutEtd="0" suppEtd="0" modifierEtd="0" suppAbscence="0"/>
+        </user>
+        <user matricule="U006" role="chefFiliere">
+            <login>ChefGI2</login>
+            <password>chefGI2</password>
+            <nom>Essalih</nom>
+            <prenom>Mohamed</prenom>
+            <permission ajoutEtd="0" suppEtd="0" modifierEtd="0" suppAbscence="0"/>
+        </user>
+        <user matricule="user2" role="prof">
+            <login>prof1</login>
+            <password>prof1</password>
+            <nom>chekry</nom>
+            <prenom>abderrahman</prenom>
+            <permission ajoutEtd="1" suppEtd="1" modifierEtd="1" suppAbscence="1"/></user>
+    </users>
+    <!-- filiere -->
+    <filieres>
+        <filiere idfiliere="F1">
+            <departement id="D01"/>
+            <chefFiliere matricule="U006"/>
+            <nom>genie informatique</nom>
+        </filiere>
+        <filiere idfiliere="F2">
+            <departement id="D01"/>
+            <chefFiliere matricule="U006"/>
+            <nom>Ingénierie des Systèmes d’Information et Réseaux</nom>
+        </filiere>
+        <filiere idfiliere="F3">
+            <departement id="D02"/>
+            <chefFiliere matricule=""/>
+            <nom>Génie Industriel et Maintenance</nom>
+        </filiere>
+        <filiere idfiliere="F4">
+            <departement id="D02"/>
+            <chefFiliere matricule=""/>
+            <nom>Mécatronique</nom>
+        </filiere>
+        <filiere idfiliere="F5">
+            <departement id="D03"/>
+            <chefFiliere matricule=""/>
+            <nom>Techniques de Management</nom>
+        </filiere>
+        <filiere idfiliere="F6">
+            <departement id="D03"/>
+            <chefFiliere matricule=""/>
+            <nom>Gestion comptable et financière</nom>
+        </filiere>
+        <filiere idfiliere="F7">
+            <departement id="D04"/>
+            <chefFiliere matricule=""/>
+            <nom>Techniques Instrumentales et Management de Qualité</nom>
+        </filiere>
+        <filiere idfiliere="F8">
+            <departement id="D04"/>
+            <chefFiliere matricule=""/>
+            <nom>Métrologie, qualité, sécurité et environnement</nom>
+        </filiere>
+    </filieres>
+    <!-- Module -->
+    <modules>
+        <module idMod="mod1">
+            <filiere idFiliere="F2"/>
+            <nom>Langues et culture</nom>
+        </module>
+        <module idMod="mod2">
+            <filiere idFiliere="F2"/>
+            <nom>Compétences non techniques</nom>
+        </module>
+        <module idMod="mod3">
+            <filiere idFiliere="F2"/>
+            <nom>Outils et Méthodes de Conception des Système d’Information</nom>
+        </module>
+        <module idMod="mod4">
+            <filiere idFiliere="F2"/>
+            <nom>Programmation orientée objet avancée</nom>
+        </module>
+        <module idMod="mod5">
+            <filiere idFiliere="F2"/>
+            <nom>Technologie WEB</nom>
+        </module>
+        <module idMod="mod6">
+            <filiere idFiliere="F2"/>
+            <nom>Introduction  à l’Intelligence Artificielle</nom>
+        </module>
+    </modules>
+    <!-- matiere -->
+    <matieres>
+        <matiere idMat="mat1">
+            <module idMod="mod1"/>
+            <nom>francais</nom>
+            <enseignant matricule=""/>
+        </matiere>
+        <matiere idMat="mat2">
+            <module idMod="mod1"/>
+            <nom>culture</nom>
+            <enseignant matricule=""/>
+        </matiere>
+        <matiere idMat="mat3">
+            <module idMod="mod2"/>
+            <nom>Développement Personnel</nom>
+            <enseignant matricule=""/>
+        </matiere>
+        <matiere idMat="mat4">
+            <module idMod="mod2"/>
+            <nom>Sport</nom>
+            <enseignant matricule=""/>
+        </matiere>
+        <matiere idMat="mat5">
+            <module idMod="mod3"/>
+            <nom>UML</nom>
+            <enseignant matricule=""/>
+        </matiere>
+        <matiere idMat="mat6">
+            <module idMod="mod3"/>
+            <nom>merise</nom>
+            <enseignant matricule=""/>
+        </matiere>
+        <matiere idMat="mat7">
+            <module idMod="mod4"/>
+            <nom>java avance</nom>
+            <enseignant matricule=""/>
+        </matiere>
+        <matiere idMat="mat8">
+            <module idMod="mod5"/>
+            <nom>XML</nom>
+            <enseignant matricule="user2"/>
+        </matiere>
+        <matiere idMat="mat9">
+            <module idMod="mod5"/>
+            <nom>PHP</nom>
+            <enseignant matricule=""/>
+        </matiere>
+        <matiere idMat="mat10">
+            <module idMod="mod6"/>
+            <nom>Algorithme de Machine learning</nom>
+            <enseignant matricule=""/>
+        </matiere>
+        <matiere idMat="mat11">
+            <module idMod="mod6"/>
+            <nom>Entrepôts de données</nom>
+            <enseignant matricule=""/>
+        </matiere>
+    </matieres>
+    <!-- Etudiant -->
+    <etudiants>
+        <etudiant cne="K1234567">
+            <nom>zahedi</nom>
+            <prenom>chaymaa</prenom>
+            <filiere idFiliere="F2"/>
+            <annee>lp</annee>
+        </etudiant>
+        <etudiant cne="K836743">
+            <nom>harib</nom>
+            <prenom>douaa</prenom>
+            <filiere idFiliere="F2"/>
+            <annee>lp</annee>
+        </etudiant>
+        <etudiant cne="K320537">
+            <nom>elbatachi</nom>
+            <prenom>samiya</prenom>
+            <filiere idFiliere="F2"/>
+            <annee>lp</annee>
+        </etudiant>
+    </etudiants>
+    <!-- listes des etudiant  -->
+    <listes>
+        <liste idListe="L01" filiere="F2" annee="LP" matiere="mat8" typeseance="cours">
+            <etudiant cne="K1234567"/>
+            <etudiant cne="K836743"/>
+            <etudiant cne="K320537"/>
+        </liste>
+    </listes>
+    <!-- les absences -->
+    <absences>
+        <absence id="1">
+            <etudiant>K1234567</etudiant>
+            <jour>2023-01-14</jour>
+            <heure>21:29:30</heure>
+            <matiere>mat8</matiere>
+        </absence>
+        <absence id="2">
+            <etudiant>K836743</etudiant>
+            <jour>2023-01-14</jour>
+            <heure>22:16:56</heure>
+            <matiere>mat8</matiere>
+        </absence>    
+    </absences>
+    
+</EST>

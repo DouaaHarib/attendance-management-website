@@ -1,0 +1,5 @@
+This attendance management system is a software developed for daily student attendance in Higher School of Technology, it facilitates to access the attendance information of a particular student in a particular class. The information is sorted by the operators, which will be provided by the teacher for a particular class. This system will also help in providing access permissions to each member of the
+school hierarchy.
+ The purpose of developing attendance management system is to computerized the tradition way of taking attendance. This attendance management system, as described above, can lead to error free, secure, reliable and fast networking system. 
+The organization can maintain computerized records without redundant entries. That means that one need not be distracted by information that is not
+relevant, while being able to reach the information.
